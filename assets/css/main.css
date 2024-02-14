@@ -22,7 +22,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
@@ -3804,14 +3803,6 @@ template {
     content: "\e62d"
 }
 
-.devicon-bootstrap-plain-wordmark:before {
-    content: "\e62e"
-}
-
-.devicon-bootstrap-plain:before {
-    content: "\e62f"
-}
-
 .devicon-bower-line-wordmark:before {
     content: "\e630"
 }
@@ -3969,13 +3960,6 @@ template {
     content: "\e835"
 }
 
-.devicon-java-plain-wordmark:before {
-    content: "\e841"
-}
-
-.devicon-java-plain:before {
-    content: "\e842"
-}
 
 .devicon-javascript-plain:before {
     content: "\e845"
@@ -4084,16 +4068,6 @@ template {
 
 .devicon-rails-plain:before {
     content: "\eba3"
-}
-
-.devicon-react-original-wordmark:before,
-.devicon-react-plain-wordmark:before {
-    content: "\e600"
-}
-
-.devicon-react-original:before,
-.devicon-react-plain:before {
-    content: "\e601"
 }
 
 .devicon-ruby-plain-wordmark:before {
@@ -4774,7 +4748,6 @@ article,
 aside,
 figcaption,
 figure,
-footer,
 header,
 nav,
 section {
@@ -4818,6 +4791,78 @@ ul {
 
 a img {
     border: 0
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto
+}
+
+@media only screen and (min-width:550px) {
+    #projects {
+        width: 80%
+    }
+}
+
+.user-projects {
+    margin: 20px auto
+}
+
+.user-projects img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+.user-projects h5 {
+    margin: 0
+}
+
+.user-projects li {
+    color: #1488CC;
+    font-size: 1.1rem
+}
+
+.user-projects p {
+    margin-right: 5px
+}
+
+@media only screen and (min-width:550px) {
+    .contents {
+        margin-left: 0;
+        width: 48%
+    }
+
+    .contents,
+    .contents-right {
+        margin-top: -5%
+    }
+
+    .contents-right,
+    .images-right {
+        float: right;
+        margin-top: 2px;
+        max-width: 27%; /* The image won't exceed its original size */
+        height: auto;    /* Maintain aspect ratio */
+    }
+
+    .images-right img {
+        float: right
+    }
+
+    .images-left {
+        float: left;
+        margin-top: 100px ;
+        max-width: 55%
+    }
+
+    .images-left img {
+        float: left
+    }
 }
 
 #particles-js {
@@ -4866,7 +4911,7 @@ a img {
 @media only screen and (min-width:550px) {
     .header .site-title {
         margin: 0;
-        font-size: 100px
+        font-size: 80px
     }
 }
 
@@ -4965,10 +5010,7 @@ a img {
 
 .down .icon:active,
 .down .icon:hover,
-.footer a:active,
-.footer a:hover {
-    color: #4b5664
-}
+
 
 #about {
     width: 90%;
@@ -5010,118 +5052,55 @@ a img {
     text-align: center;
     margin: 5px auto
 }
-
-#projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto
-}
-
-@media only screen and (min-width:550px) {
-    #projects {
-        width: 80%
-    }
-}
-
-.user-projects {
-    margin: 20px auto
-}
-
-.user-projects img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px
-}
-
-.user-projects h5 {
-    margin: 0
-}
-
-.user-projects li {
-    color: #1488CC;
-    font-size: 1.1rem
-}
-
-.user-projects p {
-    margin-right: 5px
-}
-
-@media only screen and (min-width:550px) {
-    .contents {
-        margin-left: 0;
-        width: 48%
-    }
-
-    .contents,
-    .contents-right {
-        margin-top: -5%
-    }
-
-    .contents-right,
-    .images-right {
-        float: right;
-        width: 48%
-    }
-
-    .images-right img {
-        float: right
-    }
-
-    .images-left {
-        float: left;
-        width: 48%
-    }
-
-    .images-left img {
-        float: left
-    }
-}
-
-.project-link {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 5px;
-    color: #1488CC;
-    background-color: transparent;
-    border: 1px solid #1488CC;
-    border-radius: 10px;
+  
+.pit {
     text-align: center;
-    outline: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .pit h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .pit p {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+  }
+
+  #elevator {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px
+  }
+  
+  .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007bff;
     text-decoration: none;
-    cursor: pointer;
-    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
-}
-
-.project-link:active,
-.project-link:hover {
-    background-color: #5347a8;
-    border-color: #5347a8;
-    color: #fff;
-    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
-}
-
-.footer {
+    border-radius: 5px;
+  }
+  
+  /* Styles for Footer */
+  .footer {
+    text-align: center;
     background: #1488CC;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2B32B2, #1488CC);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 10px 0;
-    margin-top: 100px;
-    text-align: center;
-    color: #fff
-}
-
-.footer .love {
-    color: red
-}
-
-.footer a {
-    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
+    display: block;
+    width: 100%;
+  }
+  
+  .footer p {
+    font-size: 1rem;
     margin: 0;
-    color: #fff
-}
+  }
+  
