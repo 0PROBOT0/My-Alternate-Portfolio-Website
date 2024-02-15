@@ -4837,6 +4837,19 @@ a img {
         width: 48%
     }
 
+@media screen and (min-width: 1024px) {
+    #aws-cp-picture {
+    margin-left: 90px;
+    margin-top: -35px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #ytb {
+    margin-top: -40px;
+    }
+}
+
     .contents,
     .contents-right {
         margin-top: -5%
@@ -4851,6 +4864,17 @@ a img {
     }
 
     .images-right img {
+        float: right
+    }
+
+    .saa {
+        float: right;
+        margin-top: 2px ;
+        max-width: 55%;
+        height: auto;
+    }
+
+    .saa img {
         float: right
     }
 
