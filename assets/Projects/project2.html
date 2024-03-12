@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- Metadata of the Webpage -->
+    <!-- Character-set Metadata -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Description Metadata-->
+    <meta name="description" content="Portfolio Website" />
+    <!-- Author Metadata -->
+    <meta name="author" content="LEBIED Abdessamad" />
+    <!-- Keyword Metadata -->
+    <meta
+      name="keywords"
+      content="LEBIED Abdessamad, LEBIED Abdessamad, LEBIED Abdessamad DPS,
+        LEBIED Abdessamad DPSRKP, LEBIED Abdessamad UMass, Aditya Vikram
+        Singh UMass Amherst, LEBIED Abdessamad New Delhi, Aditya Vikram
+        Singh Amherst, LEBIED Abdessamad ISSDC, LEBIED Abdessamad NASA,
+        LEBIED Abdessamad, LEBIED Abdessamad Website, Aditya V Singh"
+    />
+    <!-- Webpage Logo -->
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <!-- Webpage Title -->
+    <title>LEBIED Abdessamad</title>
+
+    <!-- Import CSS: Main Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <div id="particles-js">
+      <div class="header">
+        <h1>
+          <span class="site-title">LEBIED Abdessamad</span>
+          <span class="site-description">Faro Co-Founder • AWS Solutions Architect • Web Developer • Programmer</span>
+        </h1>
+        <div class="header-icons">
+          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/abdessamad-lebied-143204283/">
+            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a aria-label="My Instagram Profile" target="_blank" href="https://www.instagram.com/_lebied/">
+            <i class="icon fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a aria-label="Send Email" href="mailto:abdessamad.lebied2@gmail.com" target="_blank"
+            ><i class="icon fa fa-envelope"></i
+          ></a>
+        </div>
+        <div class="header-links">
+          <a class="link" href="../../index.html#about" data-scroll>About Me</a>
+          <a class="link" href="../../index.html#projects" data-scroll>Portfolio</a>
+          <a class="link" href="../../index.html#pitch" data-scroll>Elevator Pitch</a>
+        </div>
+      </div>
+      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+      <!-- User Introduction-->
+      <div class="user-details">
+        <h1> Data visualisation project </h1>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="../img/webp/Project-2.webp"
+            alt="Professional Me"
+            width="100%"
+            
+          />
+          <img
+            src="../img/jpg/Project-2.jpg"
+            alt="Professional Me"
+            width="100%"
+            
+          />
+        </picture>
+        <p>
+            Created visualizations using Amazon S3 and Amazon QuickSight from large datasets, using Terraform to set up the S3 bucket as shown on the figure below.
+        </p>
+        <picture>
+            <source
+              type="image/webp"
+              srcset="../img/webp/Graph.webp"
+              alt="Professional Me"
+              width="130%"
+
+            />
+            <img
+              src="../img/jpg/Graph.jpg"
+              alt="Professional Me"
+              width="130%"
+
+            />
+        </picture>
+        <b>And this is how I did it;</b>
+        <ol>
+            <h3> <li> Set up S3 bucket using Terraform: </li> </h3>
+            <p>Used the following Terraform code to set up a S3 bucket named "data-visualisation-project-2"; </p>
+            <picture>
+                <source
+                  type="image/webp"
+                  srcset="../img/webp/TF.webp"
+                  alt="Professional Me"
+                  width="70%"
+                  
+                />
+                <img
+                  src="../img/jpg/TF.jpg"
+                  alt="Professional Me"
+                  width="70%"
+                  
+                />
+            </picture>
+            <h3> <li> Download dataset from Bright Data and store it in the S3 bucket named "data-visualisation-project-2" </li> </h3>
+            <h3> <li> Edit manifest.json file to include name of the S3 bucket </li> </h3>
+            <picture>
+                <source
+                  type="image/webp"
+                  srcset="../img/webp/manifest.webp"
+                  alt="Professional Me"
+                  width="70%"
+                  
+                />
+                <img
+                  src="../img/jpg/manifest.jpg"
+                  alt="Professional Me"
+                  width="70%"
+                  
+                />
+            </picture>
+            <h3> <li> Select the S3 bucket in the lunch of QuickSight </li> </h3>
+            <h3> <li> After importing the dataset from the S3 bucket to QuickSight, I created a visualization to determine the most popular brands in the dataset </li> </h3>
+        </ol>
+      </div>
+    </section>
+
+    <br>
+    <br>
+
+    <footer class="footer">
+      <p>&copy; LEBIED Abdessamad, 2023</p>
+    </footer>
+
+    <!-- Import JS: Particles Theme -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Import JS: Sweet Scroll -->
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <!-- Import JS: Google Analytics -->
+    <script src="./assets/js/google-analytics.js"></script>
+    <!-- Import JS: Main Script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
