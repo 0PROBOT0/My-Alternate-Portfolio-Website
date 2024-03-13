@@ -4845,7 +4845,7 @@ a img {
 }
 
 @media screen and (min-width: 1024px) {
-    #ytb {
+    #project2 {
     margin-top: -40px;
     }
 }
@@ -4864,6 +4864,15 @@ a img {
     }
 
     .images-right img {
+        float: right
+    }
+
+    .images-rightt {
+        float: right;
+        width: 48%
+    }
+
+    .images-rightt img {
         float: right
     }
 
